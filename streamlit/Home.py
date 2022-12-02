@@ -22,12 +22,20 @@ def add_bg_from_local(image_file):
     )
 add_bg_from_local('boudewijn-boer-qT515JdZNy8-unsplash.jpg')
 
-st.markdown("<h1 style='font-size:70px; font-family:courier new; text-align: center; color: black;'>Forward Farming</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='font-size:70px; font-family:didot; text-align: center; color: black;'>Forward Farming</h1>", unsafe_allow_html=True)
 
 st.markdown(
 """<h1 style='font-size:25px;
-font-family:courier new;
+font-family:zapfino;
+text-align: center;
+color: brown;
+'>When will Sheffield have its day in the sun?</h1>"""
+, unsafe_allow_html=True)
+
+st.markdown(
+"""<h1 style='font-size:25px;
+font-family:didot;
 text-align: center;
 color: black;
-'>When will Sheffield have its day in the sun?</h1>"""
+'>The effect of climate change on viticulture in the UK</h1>"""
 , unsafe_allow_html=True)
