@@ -55,4 +55,4 @@ def flag_wordcloud(country):
 
     plt.show()
 
-flag_wordcloud(option_dict[option])
+st.write(flag_wordcloud(option_dict[option]))
