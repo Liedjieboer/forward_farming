@@ -1,5 +1,6 @@
 import streamlit as st
 import base64
+from wordcloud_gen.wordcloud_gen import Wordcloud
 
 st.set_page_config(
     page_title="Flags to wordclouds",
@@ -22,10 +23,18 @@ def add_bg_from_local(image_file):
     )
 add_bg_from_local('boudewijn-boer-qT515JdZNy8-unsplash.jpg')
 
-st.markdown("<h1 style='font-size:70px; font-family:didot; text-align: center; color: black;'>Flags To Wordclouds</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='font-size:50px; font-family:didot; text-align: center; color: black;'>Select a country</h1>", unsafe_allow_html=True)
 
-option = st.selectbox(
-    'Which wine producing country would you like to see?',
-    ('Email', 'Home phone', 'Mobile phone'))
+option_dict = {'Italy':'ita', 'Portugal':'por', 'USA':'usa', 'Spain':'spa', 'France':'fra', 'Germany':'ger',
+       'Argentina':'arg', 'Chile':'chi', 'Australia':'aus', 'South Africa':'rsa',
+       'New Zealand':'nz', 'Israel':'isr', 'Hungary':'hun', 'Greece':'grc', 'Romania':'rom',
+       'Canada':'can', 'Turkey':'tur', 'Uruguay':'uru', 'England':'eng', 'Bulgaria':'bul'}
 
-st.write('You selected:', option)
+option_lst = ['Italy', 'Portugal', 'USA', 'Spain', 'France', 'Germany',
+       'Argentina', 'Chile', 'Australia', 'South Africa',
+       'New Zealand', 'Israel', 'Hungary', 'Greece', 'Romania',
+       'Canada', 'Turkey', 'Uruguay', 'England', 'Bulgaria']
+
+option = st.selectbox('Select a country', option_lst)
+if option is not None:
+    st.write(Wordcloud.wordcloud_gen(option_dict[option]))
