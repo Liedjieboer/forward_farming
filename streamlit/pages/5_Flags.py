@@ -1,5 +1,10 @@
 import streamlit as st
+from PIL import Image
+from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
+import matplotlib.pyplot as plt
 import base64
+import numpy as np
+
 
 st.set_page_config(
     page_title="Flags to wordclouds",
@@ -32,10 +37,37 @@ option = st.selectbox(
 
 st.write('You selected:', option)
 
+# Join all reviews of each country:
+usa = " ".join(review for review in df[df["country"]=="US"].description)
+fra = " ".join(review for review in df[df["country"]=="France"].description)
+ita = " ".join(review for review in df[df["country"]=="Italy"].description)
+spa = " ".join(review for review in df[df["country"]=="Spain"].description)
+por = " ".join(review for review in df[df["country"]=="Portugal"].description)
+chi = " ".join(review for review in df[df["country"]=="Chile"].description)
+arg = " ".join(review for review in df[df["country"]=="Argentina"].description)
+aus = " ".join(review for review in df[df["country"]=="Australia"].description)
+ger = " ".join(review for review in df[df["country"]=="Germany"].description)
+nz = " ".join(review for review in df[df["country"]=="New Zealand"].description)
+rsa = " ".join(review for review in df[df["country"]=="South Africa"].description)
+isr = " ".join(review for review in df[df["country"]=="Israel"].description)
+grc = " ".join(review for review in df[df["country"]=="Greece"].description)
+can = " ".join(review for review in df[df["country"]=="Canada"].description)
+hun = " ".join(review for review in df[df["country"]=="Hungary"].description)
+bul = " ".join(review for review in df[df["country"]=="Bulgaria"].description)
+rom = " ".join(review for review in df[df["country"]=="Romania"].description)
+uru = " ".join(review for review in df[df["country"]=="Uruguay"].description)
+tur = " ".join(review for review in df[df["country"]=="Turkey"].description)
+eng = " ".join(review for review in df[df["country"]=="England"].description)
+
 option_dict = {'---':None, 'Italy':'ita', 'Portugal':'por', 'USA':'usa', 'Spain':'spa', 'France':'fra', 'Germany':'ger',
        'Argentina':'arg', 'Chile':'chi', 'Australia':'aus', 'South Africa':'rsa',
        'New Zealand':'nz', 'Israel':'isr', 'Hungary':'hun', 'Greece':'grc', 'Romania':'rom',
        'Canada':'can', 'Turkey':'tur', 'Uruguay':'uru', 'England':'eng', 'Bulgaria':'bul'}
+
+countries_dict = {'ita':ita, 'por':por, 'usa':usa, 'spa':spa, 'fra':fra, 'ger':ger,
+       'arg':arg, 'chi':chi, 'aus':aus, 'rsa':rsa,
+       'nz':nz, 'isr':isr, 'hun':hun, 'grc':grc, 'rom':rom,
+       'can':can, 'tur':tur, 'uru':uru, 'eng':eng, 'bul':bul}
 
 # Function to plot wordcloud on flag colours
 def flag_wordcloud(country):
