@@ -25,13 +25,16 @@ add_bg_from_local('boudewijn-boer-qT515JdZNy8-unsplash.jpg')
 
 st.markdown("<h1 style='font-size:50px; font-family:didot; text-align: center; color: black;'>Select a country</h1>", unsafe_allow_html=True)
 
-option_dict = {'---':None, 'Italy':'ita', 'Portugal':'por', 'USA':'usa', 'Spain':'spa', 'France':'fra', 'Germany':'ger',
+option_dict = {'Italy':'ita', 'Portugal':'por', 'USA':'usa', 'Spain':'spa', 'France':'fra', 'Germany':'ger',
        'Argentina':'arg', 'Chile':'chi', 'Australia':'aus', 'South Africa':'rsa',
        'New Zealand':'nz', 'Israel':'isr', 'Hungary':'hun', 'Greece':'grc', 'Romania':'rom',
        'Canada':'can', 'Turkey':'tur', 'Uruguay':'uru', 'England':'eng', 'Bulgaria':'bul'}
 
-option = st.selectbox('Select a country', option_dict)
+option_lst = ['Italy', 'Portugal', 'USA', 'Spain', 'France', 'Germany',
+       'Argentina', 'Chile', 'Australia', 'South Africa',
+       'New Zealand', 'Israel', 'Hungary', 'Greece', 'Romania',
+       'Canada', 'Turkey', 'Uruguay', 'England', 'Bulgaria']
 
-option
-
-st.write(Wordcloud.wordcloud_gen(option_dict[option]))
+option = st.selectbox('Select a country', option_lst)
+if option is not None:
+    st.write(Wordcloud.wordcloud_gen(option_dict[option]))
