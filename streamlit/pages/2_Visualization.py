@@ -2,7 +2,7 @@ import streamlit as st
 
 from PIL import Image
 
-image = Image.open('colorbar.png')
+image = Image.open('./images/colorbar.png')
 new_image = image.resize((50,400))
 
 option = st.selectbox(
