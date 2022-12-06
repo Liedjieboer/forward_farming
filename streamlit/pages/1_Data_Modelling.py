@@ -11,7 +11,7 @@ st.markdown(
 f"""
 <style>
 .stApp {{
-    background-image: url(https://raw.githubusercontent.com/Liedjieboer/forward_farming/master/streamlit/vineyard.jpg);
+    background-image: url(https://raw.githubusercontent.com/Liedjieboer/forward_farming/master/streamlit/images/vineyard.jpg);
     background-size: cover
 }}
 </style>
@@ -30,10 +30,10 @@ option = st.selectbox('', ('Minimum', 'Average', 'Maximum', 'Prediction'))
 st.write(option)
 
 if option == 'Minimum':
-    st.image('mins.png')
+    st.image('./images/mins.png')
 elif option == 'Average':
-    st.image('avgs.png')
+    st.image('./images/avgs.png')
 elif option == 'Maximum':
-    st.image('maxs.png')
+    st.image('./images/maxs.png')
 else:
-    st.image('gdd.png')
+    st.image('./images/gdd.png')

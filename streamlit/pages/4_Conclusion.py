@@ -11,7 +11,7 @@ st.markdown(
 f"""
 <style>
 .stApp {{
-    background-image: url(https://raw.githubusercontent.com/Liedjieboer/forward_farming/master/streamlit/vineyard.jpg);
+    background-image: url(https://raw.githubusercontent.com/Liedjieboer/forward_farming/master/streamlit/images/vineyard.jpg);
     background-size: cover
 }}
 </style>
