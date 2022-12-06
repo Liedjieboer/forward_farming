@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 from os import path
 from PIL import Image
-from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
+from custom_wordcloud import WordCloud, STOPWORDS
 import streamlit as st
 import time
 
@@ -102,7 +102,7 @@ class WordcloudYear:
         # plt.axis("off")
         # fig = plt.gcf()
         # st.pyplot(fig)
-        
+
         # Add a placeholder
         latest_iteration = st.empty()
         bar = st.progress(0)
