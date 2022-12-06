@@ -21,7 +21,7 @@ def add_bg_from_local(image_file):
     """,
     unsafe_allow_html=True
     )
-add_bg_from_local('boudewijn-boer-qT515JdZNy8-unsplash.jpg')
+add_bg_from_local('vineyard.jpg')
 
 st.markdown("<h1 style='font-size:70px; font-family:didot; text-align: center; color: black;'>What we did</h1>", unsafe_allow_html=True)
 
@@ -34,10 +34,10 @@ option = st.selectbox('', ('Minimum', 'Average', 'Maximum', 'Prediction'))
 st.write(option)
 
 if option == 'Minimum':
-    st.image('Screenshot 2022-12-06 at 14.41.24.png')
+    st.image('mins.png')
 elif option == 'Average':
-    st.image('Screenshot 2022-12-06 at 14.41.46.png')
+    st.image('avgs.png')
 elif option == 'Maximum':
-    st.image('Screenshot 2022-12-06 at 14.41.35.png')
+    st.image('maxs.png')
 else:
-    st.image('Screenshot 2022-12-06 at 16.35.45.png')
+    st.image('gdd.png')
