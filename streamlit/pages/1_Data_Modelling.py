@@ -30,10 +30,10 @@ option = st.selectbox('', ('Minimum', 'Average', 'Maximum', 'Prediction'))
 st.write(option)
 
 if option == 'Minimum':
-    st.image('./images/mins.png')
+    st.image('../images/mins.png')
 elif option == 'Average':
-    st.image('./images/avgs.png')
+    st.image('../images/avgs.png')
 elif option == 'Maximum':
-    st.image('./images/maxs.png')
+    st.image('../images/maxs.png')
 else:
-    st.image('./images/gdd.png')
+    st.image('../images/gdd.png')
