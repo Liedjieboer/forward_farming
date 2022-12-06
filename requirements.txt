@@ -13,3 +13,4 @@ plotly
 tensorflow.keras
 tensorflow_datasets
 streamlit
+wordcloud
