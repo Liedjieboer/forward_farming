@@ -5,6 +5,7 @@ from wordcloud_gen.wordcloud_year import WordcloudYear
 st.set_page_config(
     page_title="Flags to wordclouds",
     page_icon=":cloud:",
+    initial_sidebar_state="collapsed"
 )
 
 def add_bg_from_local(image_file):
@@ -23,9 +24,9 @@ def add_bg_from_local(image_file):
     )
 add_bg_from_local('boudewijn-boer-qT515JdZNy8-unsplash.jpg')
 
-st.markdown("<h1 style='font-size:50px; font-family:didot; text-align: center; color: black;'>Select the year</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='font-size:70px; font-family:didot; text-align: center; color: black;'>Select the year</h1>", unsafe_allow_html=True)
 
-option = st.select_slider('Select the year', [2072, 2122, 2172])
+option = st.select_slider('', [2072, 2122, 2172])
 option_dict = {2072:'bad', 2122:'good', 2172:'excellent'}
 if option is not None:
     st.write(WordcloudYear.wordcloud_gen(option_dict[option]))

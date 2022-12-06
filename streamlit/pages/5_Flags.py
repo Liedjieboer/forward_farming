@@ -5,6 +5,7 @@ from wordcloud_gen.wordcloud_gen import Wordcloud
 st.set_page_config(
     page_title="Flags to wordclouds",
     page_icon=":cloud:",
+    initial_sidebar_state="collapsed"
 )
 
 def add_bg_from_local(image_file):

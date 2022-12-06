@@ -8,9 +8,7 @@ matplotlib
 seaborn
 scikit-learn
 darts
-calendar
 plotly
 tensorflow.keras
 tensorflow_datasets
 streamlit
-wordcloud
