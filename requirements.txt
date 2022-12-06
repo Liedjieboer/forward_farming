@@ -9,6 +9,6 @@ seaborn
 scikit-learn
 darts
 plotly
-tensorflow.keras
+tensorflow
 tensorflow_datasets
 streamlit
