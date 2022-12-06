@@ -22,7 +22,7 @@ def add_bg_from_local(image_file):
     """,
     unsafe_allow_html=True
     )
-add_bg_from_local('boudewijn-boer-qT515JdZNy8-unsplash.jpg')
+add_bg_from_local('vineyard.jpg')
 
 st.markdown("<h1 style='font-size:70px; font-family:didot; text-align: center; color: black;'>Forward Farming</h1>", unsafe_allow_html=True)
 

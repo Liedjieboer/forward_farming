@@ -1,7 +1,6 @@
 .env
 .DS_Store
 *.csv
-*.png
 *.tif
 *.__pycache__/
 .ipynb_checkpoints/
