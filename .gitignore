@@ -1,6 +1,10 @@
 .env
 .DS_Store
-.csv
-.tiff
-.__pycache__/
+*.csv
+*.png
+*.tif
+*.__pycache__/
 .ipynb_checkpoints/
+#QGIS/temp_time/
+*/__pycache__/
+streamlit/wordcloud_gen/__pycache__/
