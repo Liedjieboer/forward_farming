@@ -1,5 +1,6 @@
 import streamlit as st
 import base64
+from PIL import Image
 from wordcloud_gen.wordcloud_gen import Wordcloud
 
 st.set_page_config(
@@ -8,21 +9,19 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
-def add_bg_from_local(image_file):
-    with open(image_file, "rb") as image_file:
-        encoded_string = base64.b64encode(image_file.read())
-    st.markdown(
-    f"""
-    <style>
-    .stApp {{
-        background-image: url(data:image/{"jpg"};base64,{encoded_string.decode()});
-        background-size: cover
-    }}
-    </style>
-    """,
-    unsafe_allow_html=True
-    )
-add_bg_from_local('vineyard.jpg')
+
+st.markdown(
+f"""
+<style>
+.stApp {{
+    background-image: url(https://raw.githubusercontent.com/Liedjieboer/forward_farming/master/streamlit/images/vineyard.jpg);
+    background-size: cover
+}}
+</style>
+""",
+unsafe_allow_html=True
+)
+
 
 st.markdown("<h1 style='font-size:50px; font-family:didot; text-align: center; color: black;'>Select a country</h1>", unsafe_allow_html=True)
 
