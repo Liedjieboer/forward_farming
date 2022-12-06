@@ -5,7 +5,7 @@ st.set_page_config(
     page_title="Forward Farming",
     page_icon=":tractor:",
     layout="centered",
-    initial_sidebar_state="auto"
+    initial_sidebar_state="collapsed"
 )
 
 def add_bg_from_local(image_file):

@@ -102,6 +102,7 @@ class WordcloudYear:
         # plt.axis("off")
         # fig = plt.gcf()
         # st.pyplot(fig)
+        
         # Add a placeholder
         latest_iteration = st.empty()
         bar = st.progress(0)
