@@ -54,7 +54,7 @@ class Wordcloud:
             'can':can, 'tur':tur, 'uru':uru, 'eng':eng, 'bul':bul}
 
         # Generate a word cloud image
-        mask = np.array(Image.open(f"/Users/nico_marais/code/Liedjieboer/forward_farming/wordcloud_masks/flags/flag_{self}.jpg"))
+        mask = np.array(Image.open(f"streamlit/images/flags/flag_{self}.jpg"))
         wordcloud = WordCloud(stopwords=stopwords, background_color="white", mode="RGBA", max_words=1000,
                             mask=mask).generate(countries_dict[self])
 
