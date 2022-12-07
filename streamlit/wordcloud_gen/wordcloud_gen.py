@@ -3,8 +3,9 @@ import numpy as np
 import pandas as pd
 from os import path
 from PIL import Image
-from custom_wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
+# from custom_wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
 import streamlit as st
+from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
 
 import matplotlib.pyplot as plt
 
@@ -59,7 +60,7 @@ class Wordcloud:
 
         # create coloring from image
         image_colors = ImageColorGenerator(mask)
-        plt.figure(figsize=[7,7])
+        plt.figure(figsize=[10,8])
         plt.imshow(wordcloud.recolor(color_func=image_colors), interpolation="bilinear")
         plt.axis("off")
         fig = plt.gcf()
