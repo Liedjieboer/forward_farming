@@ -3,10 +3,10 @@ import numpy as np
 import pandas as pd
 from os import path
 from PIL import Image
-from custom_wordcloud import WordCloud, STOPWORDS
+# from custom_wordcloud import WordCloud, STOPWORDS
 import streamlit as st
 import time
-# from wordcloud import WordCloud, STOPWORDS
+from wordcloud import WordCloud, STOPWORDS
 
 import matplotlib.pyplot as plt
 
