@@ -15,7 +15,7 @@ class Wordcloud:
         self.country = country
 
     def wordcloud_gen(self):
-        path = "/Users/nico_marais/code/Liedjieboer/forward_farming/streamlit/winemag-data-130k-v2.csv"
+        path = "streamlit/winemag-data-130k-v2.csv"
 
         # Load in the dataframe
         df = pd.read_csv(path, index_col=0)
