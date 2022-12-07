@@ -29,9 +29,9 @@ class WordcloudYear:
             else:
                 return val
 
-        mask_2072 = np.array(Image.open('/home/nico_marais/forward_farming/wordcloud_masks/year_mask_Page_1.png'))
-        mask_2122 = np.array(Image.open('/home/nico_marais/forward_farming/wordcloud_masks/year_mask_Page_2.png'))
-        mask_2172 = np.array(Image.open('/home/nico_marais/forward_farming/wordcloud_masks/year_mask_Page_3.png'))
+        mask_2072 = np.array(Image.open('/wordcloud_masks/year_mask_Page_1.png'))
+        mask_2122 = np.array(Image.open('/wordcloud_masks/year_mask_Page_2.png'))
+        mask_2172 = np.array(Image.open('/wordcloud_masks/year_mask_Page_3.png'))
 
         maskable_image_1 = np.ndarray((mask_2072.shape[0],mask_2072.shape[1]), np.int32)
         maskable_image_2 = np.ndarray((mask_2122.shape[0],mask_2122.shape[1]), np.int32)
@@ -91,7 +91,7 @@ class WordcloudYear:
         if self == 'bad':
             wordcloud = WordCloud(stopwords=stopwords, font_path=font_path,
                mask=mask_2072, background_color="rgba(255, 255, 255, 160)", mode="RGBA",
-               max_words=2000, max_font_size=256, min_font_size=30, contour_width=5, contour_color='rgba(87, 11, 6, 87)',
+               max_words=2000, max_font_size=256, min_font_size=30, contour_width=5, contour_color='rgba(87, 11, 6, 255)',
                random_state=42, width=mask_2072.shape[1], color_func=similar_color_func,
                height=mask_2072.shape[0]).generate(" ".join(bad))
             wordcloud.to_file("temp.png")
@@ -99,7 +99,7 @@ class WordcloudYear:
         if self == 'good':
             wordcloud = WordCloud(stopwords=stopwords, font_path=font_path,
                mask=mask_2122, background_color="rgba(255, 255, 255, 160)", mode="RGBA",
-               max_words=2000, max_font_size=256, min_font_size=30, contour_width=5, contour_color='rgba(87, 11, 6, 87)',
+               max_words=2000, max_font_size=256, min_font_size=30, contour_width=5, contour_color='rgba(87, 11, 6, 255)',
                random_state=42, width=mask_2122.shape[1], color_func=similar_color_func,
                height=mask_2122.shape[0]).generate(" ".join(good))
             wordcloud.to_file("temp.png")
@@ -107,7 +107,7 @@ class WordcloudYear:
         if self == 'excellent':
             wordcloud = WordCloud(stopwords=stopwords, font_path=font_path,
                mask=mask_2172, background_color="rgba(255, 255, 255, 160)", mode="RGBA",
-               max_words=2000, max_font_size=256, min_font_size=30, contour_width=5, contour_color='rgba(87, 11, 6, 87)',
+               max_words=2000, max_font_size=256, min_font_size=30, contour_width=5, contour_color='rgba(87, 11, 6, 255)',
                random_state=42, width=mask_2172.shape[1], color_func=similar_color_func,
                height=mask_2172.shape[0]).generate(" ".join(excellent))
             wordcloud.to_file("temp.png")

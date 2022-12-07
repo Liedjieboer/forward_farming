@@ -15,7 +15,7 @@ class Wordcloud:
         self.country = country
 
     def wordcloud_gen(self):
-        path = "/home/nico_marais/forward_farming_big_datasets/winemag-data-130k-v2.csv"
+        path = "/Users/nico_marais/code/Liedjieboer/forward_farming/streamlit/winemag-data-130k-v2.csv"
 
         # Load in the dataframe
         df = pd.read_csv(path, index_col=0)
@@ -54,7 +54,7 @@ class Wordcloud:
             'can':can, 'tur':tur, 'uru':uru, 'eng':eng, 'bul':bul}
 
         # Generate a word cloud image
-        mask = np.array(Image.open(f"/home/nico_marais/forward_farming/wordcloud_masks/flags/flag_{self}.jpg"))
+        mask = np.array(Image.open(f"/Users/nico_marais/code/Liedjieboer/forward_farming/wordcloud_masks/flags/flag_{self}.jpg"))
         wordcloud = WordCloud(stopwords=stopwords, background_color="white", mode="RGBA", max_words=1000,
                             mask=mask).generate(countries_dict[self])
 
