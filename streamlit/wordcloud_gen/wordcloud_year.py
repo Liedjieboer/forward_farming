@@ -78,7 +78,7 @@ class WordcloudYear:
                'develop', 'drink', '2017–2027', 'heels', 'drink', 'embodies', 'thrills', 'be', 'tocai', 'drink', 'tilled',
                'barbara', 'juicily']
 
-        font_path = '/System/Library/Fonts/Didot.ttc'
+        font_path = 'streamlit/Didot.ttc'
 
         def similar_color_func(word=None, font_size=None,
                         position=None, orientation=None,
