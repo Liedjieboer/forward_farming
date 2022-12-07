@@ -12,3 +12,4 @@ plotly
 tensorflow
 tensorflow_datasets
 streamlit
+wordcloud
