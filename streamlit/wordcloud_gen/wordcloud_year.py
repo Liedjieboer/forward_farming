@@ -1,7 +1,7 @@
 # Loading all necessary libraries
 import numpy as np
 import pandas as pd
-# from os import path
+from os import path
 from PIL import Image
 from custom_wordcloud import WordCloud, STOPWORDS
 import streamlit as st
