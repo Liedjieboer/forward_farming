@@ -130,6 +130,8 @@ class WordcloudYear:
         st.image("temp.png")
 
 
+
+# Extra words for wordcloud (already added to the list):
 # excellent = ['freshness','freshness', 'freshness', 'freshness', 'refreshing', 'it',
 #                      'it', 'that', 'now', 'it', 'balanced', 'it', 'drink', 'will', '2018',
 #                      'the', 'finish', 'age', 'crispness', 'ample', 'long', "it's", 'sure',
