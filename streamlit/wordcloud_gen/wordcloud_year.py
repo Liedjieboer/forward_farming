@@ -29,9 +29,9 @@ class WordcloudYear:
             else:
                 return val
 
-        mask_2072 = np.array(Image.open('/wordcloud_masks/year_mask_Page_1.png'))
-        mask_2122 = np.array(Image.open('/wordcloud_masks/year_mask_Page_2.png'))
-        mask_2172 = np.array(Image.open('/wordcloud_masks/year_mask_Page_3.png'))
+        mask_2072 = np.array(Image.open('streamlit/images/year_mask_Page_1.png'))
+        mask_2122 = np.array(Image.open('streamlit/images/year_mask_Page_2.png'))
+        mask_2172 = np.array(Image.open('streamlit/images/year_mask_Page_3.png'))
 
         maskable_image_1 = np.ndarray((mask_2072.shape[0],mask_2072.shape[1]), np.int32)
         maskable_image_2 = np.ndarray((mask_2122.shape[0],mask_2122.shape[1]), np.int32)
