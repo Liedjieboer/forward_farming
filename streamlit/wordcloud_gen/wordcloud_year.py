@@ -49,19 +49,33 @@ class WordcloudYear:
         excellent = ['generous', 'the', 'ripe', 'the', 'ripe', 'the', 'the', 'the', 'the', 'the', 'juicy', 'the', 'the',
                         'the', 'it', 'the', 'lively', 'is', 'fresh', 'crisp', 'freshness', 'freshness', 'fresh', 'it', 'now', 'freshness', 'ample', 'age',
                         'it', 'balanced', 'age', 'leaving', 'certain', 'age', 'wait', 'lemon', 'lasting', 'finish', 'finish', 'now', "it's", 'more', 'clean',
-                        'develop', 'drink','nature', 'drink', 'smells', 'pungent', 'soils', 'will', 'cannot', 'age', 'well', 'through', 'years']
+                        'develop', 'drink','nature', 'drink', 'smells', 'pungent', 'soils', 'will', 'cannot', 'age', 'well', 'through', 'years',
+                        'freshness','freshness', 'freshness', 'freshness', 'refreshing', 'it', 'it', 'that', 'now', 'it', 'balanced', 'it', 'drink', 'will', '2018',
+                        'the', 'finish', 'age', 'crispness', 'ample', 'long', "it's", 'sure','to', 'develop', 'drink', 'vintage', 'broadness', 'drink', 'now',
+                        'through', 'thrills', 'be', 'tocai', 'drink', 'fynbos', 'barbara', 'wines']
 
         good = ['the', 'generous', 'the', 'ripe', 'the', 'ripe', 'the', 'the', 'that', 'it', 'the', 'taut', 'zingy', 'the',
                 'crisp', 'the', 'it', 'the', 'zesty', 'finish', 'is', 'fresh', 'zesty', 'freshness', 'freshness', 'fresh', 'its',
                 'the', 'freshness', 'ample', 'age', 'structure', 'balanced', 'age', 'with', 'its', 'aging', 'hold', 'lemon', 'long', 'finish', 'finish', 'you',
                 "it's", 'its', 'clean', 'develop', 'drink', '1972', 'drink', 'heels', 'shouldered', 'grape', 'soils', 'smooth', 'proves', 'forefront',
-                'well', 'palate', 'at']
+                'well', 'palate', 'at', 'zesty', 'a', 'fresh', 'fresh', 'zesty', 'refreshing', 'citrus—and', 'fresh', 'lively', 'zesty',
+                'freshness', 'lemony', 'crisp', 'freshness', 'totally', 'refreshing', 'crisp', 'that', 'focused',
+                'that', 'crisp', 'freshness', 'balanced', 'a', 'drink', 'elegance', 'evolving', 'the', 'finish', 'age',
+                'frothy', 'long', "it's", 'sure', 'to', 'develop', 'drink', '2017–2027', 'heels', 'drink', 'now',
+                'embodies', 'thrills', 'be', 'tocai', 'drink', 'fynbos', 'barbara', 'juicily']
 
         bad = ["ripe", "the", "that", "it", "the", "taut", "creates", "fresh", "lively", "crisp",
                 "the", "zesty", "finish", "is", "fresh", "zesty", "freshness", "freshness", "fresh", "its", "the", "freshness",
                 "ample", "age", "structure", "balanced", "age", "with", "its", "aging", "wait", "lemon", "long",
                 "finish", "finish", "you", "it's", "its", "to", "develop", "drink", "1972", "drink", "heels",
-                "shouldered", "distinctively", "soils", "smooth", "proves", "least", "well", "through", "at"]
+                "shouldered", "distinctively", "soils", "smooth", "proves", "least", "well", "through", "at", 'crisp', 'citrusy',
+                'a', 'fresh', 'lemony', 'citrusy', 'citric', 'citrusy', 'citric', 'zesty', 'freshness',
+               'citric', 'slender', 'emphasizes', 'strike', 'zip', 'flowery', 'gardenia', 'lemony', 'the', 'honeysuckle',
+               'zestiness', 'fizz', 'honeysuckle', 'fresh', 'light', 'racy', 'freshness', 'lemony', 'crisp', 'freshness',
+               'totally', 'refreshing', 'crisp', 'it', 'focused', 'finish', 'that', 'crisp', 'freshness', 'balanced', 'a',
+               'drink', 'poise', 'evolving', 'the', 'finish', 'age', 'frothy', 'lovely', 'long', "it's", 'sure', 'to',
+               'develop', 'drink', '2017–2027', 'heels', 'drink', 'embodies', 'thrills', 'be', 'tocai', 'drink', 'tilled',
+               'barbara', 'juicily']
 
         font_path = '/System/Library/Fonts/Didot.ttc'
 
@@ -102,7 +116,7 @@ class WordcloudYear:
         # plt.axis("off")
         # fig = plt.gcf()
         # st.pyplot(fig)
-        
+
         # Add a placeholder
         # latest_iteration = st.empty()
         bar = st.progress(0)
@@ -114,3 +128,24 @@ class WordcloudYear:
             time.sleep(0.1)
 
         st.image("temp.png")
+
+
+# excellent = ['freshness','freshness', 'freshness', 'freshness', 'refreshing', 'it',
+#                      'it', 'that', 'now', 'it', 'balanced', 'it', 'drink', 'will', '2018',
+#                      'the', 'finish', 'age', 'crispness', 'ample', 'long', "it's", 'sure',
+#                      'to', 'develop', 'drink', 'vintage', 'broadness', 'drink', 'now',
+#                      'through', 'thrills', 'be', 'tocai', 'drink', 'fynbos', 'barbara', 'wines']
+
+#         good = ['zesty', 'a', 'fresh', 'fresh', 'zesty', 'refreshing', 'citrus—and', 'fresh', 'lively', 'zesty',
+#                 'freshness', 'lemony', 'crisp', 'freshness', 'totally', 'refreshing', 'crisp', 'that', 'focused',
+#                 'that', 'crisp', 'freshness', 'balanced', 'a', 'drink', 'elegance', 'evolving', 'the', 'finish', 'age',
+#                 'frothy', 'long', "it's", 'sure', 'to', 'develop', 'drink', '2017–2027', 'heels', 'drink', 'now',
+#                 'embodies', 'thrills', 'be', 'tocai', 'drink', 'fynbos', 'barbara', 'juicily']
+
+#         bad = ['crisp', 'citrusy', 'a', 'fresh', 'lemony', 'citrusy', 'citric', 'citrusy', 'citric', 'zesty', 'freshness',
+#                'citric', 'slender', 'emphasizes', 'strike', 'zip', 'flowery', 'gardenia', 'lemony', 'the', 'honeysuckle',
+#                'zestiness', 'fizz', 'honeysuckle', 'fresh', 'light', 'racy', 'freshness', 'lemony', 'crisp', 'freshness',
+#                'totally', 'refreshing', 'crisp', 'it', 'focused', 'finish', 'that', 'crisp', 'freshness', 'balanced', 'a',
+#                'drink', 'poise', 'evolving', 'the', 'finish', 'age', 'frothy', 'lovely', 'long', "it's", 'sure', 'to',
+#                'develop', 'drink', '2017–2027', 'heels', 'drink', 'embodies', 'thrills', 'be', 'tocai', 'drink', 'tilled',
+#                'barbara', 'juicily']

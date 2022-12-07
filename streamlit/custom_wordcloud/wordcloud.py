@@ -27,7 +27,7 @@ from PIL import ImageDraw
 from PIL import ImageFilter
 from PIL import ImageFont
 
-from streamlit.query_integral_image import query_integral_image
+from .query_integral_image import query_integral_image
 from .tokenization import unigrams_and_bigrams, process_tokens
 
 FILE = os.path.dirname(__file__)
