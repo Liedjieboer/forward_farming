@@ -1,6 +1,6 @@
 .env
 .DS_Store
-*.csv
+# *.csv
 *.tif
 *.__pycache__/
 .ipynb_checkpoints/
