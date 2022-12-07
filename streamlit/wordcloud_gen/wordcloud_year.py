@@ -99,7 +99,7 @@ class WordcloudYear:
         if self == 'good':
             wordcloud = WordCloud(stopwords=stopwords, font_path=font_path,
                mask=mask_2122, background_color="rgb(255, 255, 255)", mode="RGB",
-               max_words=2000, max_font_size=256, min_font_size=30, contour_width=5, contour_color='rgba(87, 11, 6)',
+               max_words=2000, max_font_size=256, min_font_size=30, contour_width=5, contour_color='rgb(87, 11, 6)',
                random_state=42, width=mask_2122.shape[1], color_func=similar_color_func,
                height=mask_2122.shape[0]).generate(" ".join(good))
             wordcloud.to_file("temp.png")
