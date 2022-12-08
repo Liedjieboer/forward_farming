@@ -35,6 +35,6 @@ option_lst = ['Italy', 'Portugal', 'USA', 'Spain', 'France', 'Germany',
        'New Zealand', 'Israel', 'Hungary', 'Greece', 'Romania',
        'Canada', 'Turkey', 'Uruguay', 'Britain', 'Bulgaria']
 
-option = st.selectbox('Select a country', option_lst)
+option = st.selectbox('', option_lst)
 if option is not None:
     st.write(Wordcloud.wordcloud_gen(option_dict[option]))
