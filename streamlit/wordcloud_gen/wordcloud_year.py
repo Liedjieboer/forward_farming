@@ -5,7 +5,6 @@ from os import path
 from PIL import Image
 # from custom_wordcloud import WordCloud, STOPWORDS
 import streamlit as st
-import time
 from wordcloud import WordCloud, STOPWORDS
 
 import matplotlib.pyplot as plt
@@ -94,7 +93,7 @@ class WordcloudYear:
                max_words=2000, max_font_size=256, min_font_size=30, contour_width=5, contour_color='rgb(87, 11, 6)',
                random_state=42, width=mask_2072.shape[1], color_func=similar_color_func,
                height=mask_2072.shape[0]).generate(" ".join(bad))
-            wordcloud.to_file("temp.png")
+            wordcloud.to_file("temp_bad.png")
 
         if self == 'good':
             wordcloud = WordCloud(stopwords=stopwords, font_path=font_path,
@@ -102,7 +101,7 @@ class WordcloudYear:
                max_words=2000, max_font_size=256, min_font_size=30, contour_width=5, contour_color='rgb(87, 11, 6)',
                random_state=42, width=mask_2122.shape[1], color_func=similar_color_func,
                height=mask_2122.shape[0]).generate(" ".join(good))
-            wordcloud.to_file("temp.png")
+            wordcloud.to_file("temp_good.png")
 
         if self == 'excellent':
             wordcloud = WordCloud(stopwords=stopwords, font_path=font_path,
@@ -110,7 +109,7 @@ class WordcloudYear:
                max_words=2000, max_font_size=256, min_font_size=30, contour_width=5, contour_color='rgb(87, 11, 6)',
                random_state=42, width=mask_2172.shape[1], color_func=similar_color_func,
                height=mask_2172.shape[0]).generate(" ".join(excellent))
-            wordcloud.to_file("temp.png")
+            wordcloud.to_file("temp_excellent.png")
 
         # plt.figure(figsize=[10,10])
         # plt.imshow(wordcloud, interpolation="bilinear")
@@ -120,15 +119,7 @@ class WordcloudYear:
 
         # Add a placeholder
         # latest_iteration = st.empty()
-        bar = st.progress(0)
 
-        for i in range(100):
-            # Update the progress bar with each iteration.
-            # latest_iteration.text(f'Iteration {i+1}')
-            bar.progress(i + 1)
-            time.sleep(0.1)
-
-        st.image("temp.png")
 
 
 
