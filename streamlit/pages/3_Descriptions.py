@@ -8,6 +8,8 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
+col1, col2, col3 = st.columns([0.2, 5, 0.2])
+
 st.markdown(
 f"""
 <style>
@@ -34,7 +36,8 @@ if option is not None:
             bar.progress(i + 1)
             time.sleep(0.1)
 
-        st.image("streamlit/images/temp_bad.png", width=1500)
+        # st.image("streamlit/images/temp_bad.png", width=1500)
+        col2.image("streamlit/images/temp_bad.png", width=250)
     elif option == 2122:
         bar = st.progress(0)
 
