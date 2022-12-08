@@ -25,14 +25,12 @@ st.markdown("<h1 style='font-size:70px; font-family:didot; text-align: center; c
 #     font-family:didot; text-align: center;\
 #         color: black;'>What we did</h3>", unsafe_allow_html=True)
 
-option = st.selectbox('', ('Minimum', 'Average', 'Maximum', 'Prediction'))
+option = st.selectbox('', ('Minimum', 'Maximum', 'GDD Prediction'))
 
 st.write(option)
 
 if option == 'Minimum':
     st.image('streamlit/images/mins.png')
-elif option == 'Average':
-    st.image('streamlit/images/avgs.png')
 elif option == 'Maximum':
     st.image('streamlit/images/maxs.png')
 else:
