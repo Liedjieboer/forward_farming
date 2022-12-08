@@ -19,7 +19,7 @@ f"""
 unsafe_allow_html=True
 )
 
-st.markdown("<h2 style='font-size:50px; font-family:didot; \
+st.markdown("<h2 style='font-size:60px; font-family:didot; \
     text-align: center; color: black;'\
         >There are far better things ahead than any we leave behind.</h2>", unsafe_allow_html=True)
 
