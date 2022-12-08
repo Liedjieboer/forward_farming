@@ -28,7 +28,7 @@ if option is not None:
     if option == 2072:
         bar = st.progress(0)
 
-        for i in range(50):
+        for i in range(100):
             # Update the progress bar with each iteration.
             # latest_iteration.text(f'Iteration {i+1}')
             bar.progress(i + 1)
@@ -38,7 +38,7 @@ if option is not None:
     elif option == 2122:
         bar = st.progress(0)
 
-        for i in range(50):
+        for i in range(100):
             # Update the progress bar with each iteration.
             # latest_iteration.text(f'Iteration {i+1}')
             bar.progress(i + 1)
@@ -48,7 +48,7 @@ if option is not None:
     elif option == 2172:
         bar = st.progress(0)
 
-        for i in range(50):
+        for i in range(100):
             # Update the progress bar with each iteration.
             # latest_iteration.text(f'Iteration {i+1}')
             bar.progress(i + 1)
