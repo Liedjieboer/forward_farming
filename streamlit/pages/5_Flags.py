@@ -28,12 +28,12 @@ st.markdown("<h1 style='font-size:50px; font-family:didot; text-align: center; c
 option_dict = {'Italy':'ita', 'Portugal':'por', 'USA':'usa', 'Spain':'spa', 'France':'fra', 'Germany':'ger',
        'Argentina':'arg', 'Chile':'chi', 'Australia':'aus', 'South Africa':'rsa',
        'New Zealand':'nz', 'Israel':'isr', 'Hungary':'hun', 'Greece':'grc', 'Romania':'rom',
-       'Canada':'can', 'Turkey':'tur', 'Uruguay':'uru', 'England':'eng', 'Bulgaria':'bul'}
+       'Canada':'can', 'Turkey':'tur', 'Uruguay':'uru', 'Britain':'eng', 'Bulgaria':'bul'}
 
 option_lst = ['Italy', 'Portugal', 'USA', 'Spain', 'France', 'Germany',
        'Argentina', 'Chile', 'Australia', 'South Africa',
        'New Zealand', 'Israel', 'Hungary', 'Greece', 'Romania',
-       'Canada', 'Turkey', 'Uruguay', 'England', 'Bulgaria']
+       'Canada', 'Turkey', 'Uruguay', 'Britain', 'Bulgaria']
 
 option = st.selectbox('Select a country', option_lst)
 if option is not None:
