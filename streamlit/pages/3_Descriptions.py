@@ -34,7 +34,7 @@ if option is not None:
             bar.progress(i + 1)
             time.sleep(0.1)
 
-        st.image("streamlit/images/temp_bad.png", width=500)
+        st.image("streamlit/images/temp_bad.png", use_column_width=True)
     elif option == 2122:
         bar = st.progress(0)
 
@@ -44,7 +44,7 @@ if option is not None:
             bar.progress(i + 1)
             time.sleep(0.1)
 
-        st.image("streamlit/images/temp_good.png", width=1500)
+        st.image("streamlit/images/temp_good.png", use_column_width=True)
     elif option == 2172:
         bar = st.progress(0)
 
@@ -54,4 +54,4 @@ if option is not None:
             bar.progress(i + 1)
             time.sleep(0.1)
 
-        st.image("streamlit/images/temp_excellent.png", width=1500)
+        st.image("streamlit/images/temp_excellent.png", use_column_width=True)
