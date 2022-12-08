@@ -26,32 +26,32 @@ option = st.select_slider('', [2072, 2122, 2172])
 option_dict = {2072:'bad', 2122:'good', 2172:'excellent'}
 if option is not None:
     if option == 2072:
-        bar = st.progress(0)
+        # bar = st.progress(0)
 
-        for i in range(100):
-            # Update the progress bar with each iteration.
-            # latest_iteration.text(f'Iteration {i+1}')
-            bar.progress(i + 1)
-            time.sleep(0.1)
+        # for i in range(100):
+        #     # Update the progress bar with each iteration.
+        #     # latest_iteration.text(f'Iteration {i+1}')
+        #     bar.progress(i + 1)
+        #     time.sleep(0.1)
 
         st.image("streamlit/images/temp_bad.png", use_column_width=True)
     elif option == 2122:
-        bar = st.progress(0)
+        # bar = st.progress(0)
 
-        for i in range(100):
-            # Update the progress bar with each iteration.
-            # latest_iteration.text(f'Iteration {i+1}')
-            bar.progress(i + 1)
-            time.sleep(0.1)
+        # for i in range(100):
+        #     # Update the progress bar with each iteration.
+        #     # latest_iteration.text(f'Iteration {i+1}')
+        #     bar.progress(i + 1)
+        #     time.sleep(0.1)
 
         st.image("streamlit/images/temp_good.png", use_column_width=True)
     elif option == 2172:
-        bar = st.progress(0)
+        # bar = st.progress(0)
 
-        for i in range(100):
-            # Update the progress bar with each iteration.
-            # latest_iteration.text(f'Iteration {i+1}')
-            bar.progress(i + 1)
-            time.sleep(0.1)
+        # for i in range(100):
+        #     # Update the progress bar with each iteration.
+        #     # latest_iteration.text(f'Iteration {i+1}')
+        #     bar.progress(i + 1)
+        #     time.sleep(0.1)
 
         st.image("streamlit/images/temp_excellent.png", use_column_width=True)
