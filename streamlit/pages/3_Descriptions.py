@@ -37,7 +37,7 @@ if option is not None:
             bar.progress(i + 1)
             time.sleep(0.1)
 
-        st.image("temp_bad.png")
+        st.image("temp_bad.png", width=15)
     elif option == 2122:
         bar = st.progress(0)
 
@@ -47,7 +47,7 @@ if option is not None:
             bar.progress(i + 1)
             time.sleep(0.1)
 
-        st.image("temp_good.png")
+        st.image("temp_good.png", width=15)
     elif option == 2172:
         bar = st.progress(0)
 
@@ -57,4 +57,4 @@ if option is not None:
             bar.progress(i + 1)
             time.sleep(0.1)
 
-        st.image("temp_excellent.png")
+        st.image("temp_excellent.png", width=15)
