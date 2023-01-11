@@ -6,3 +6,5 @@ After some research we found that a GDD (Growing Degree Days) of around 1500 wou
 To further help us plot where exactly the best plots of land to use for viticulture would be, we used QGIS to show south-facing slopes with the right soil content, and to show the way the temperatures will be rising in those areas.
 
 Then we used a NLP word generator to predict how wine connoisseurs will describe Sheffield wine in the future (and created the compulsory wordcloud accordingly).
+
+Thanks to my team (Finn, Robert and John) for their hard work and great attitude on this project, and also to Catriona and Mark for their support and truly helpful suggestions.
