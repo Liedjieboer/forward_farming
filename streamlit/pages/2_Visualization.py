@@ -10,7 +10,7 @@ option = st.selectbox(
 
 if option == 'Sites':
     st.write(
-        f"<iframe src='https://cesium.com/ion/stories/viewer/?id=94b064a0-668f-495d-bf86-bdca2364f818' width='1400' height='800'></iframe>",
+        f"<iframe src='https://cesium.com/ion/stories/viewer/?id=94b064a0-668f-495d-bf86-bdca2364f818' width='1200' height='700'></iframe>",
         unsafe_allow_html=True
     )
 
@@ -20,7 +20,7 @@ elif option == 'Temperature':
 
     col1, col2 = st.columns([7, 1])
     col1.write(
-        f"<iframe src='https://cesium.com/ion/stories/viewer/?id=5fdeb51a-4be7-4231-9f4f-e0c9d77aed12' width='1200' height='800'></iframe>", #width='500' height='400'
+        f"<iframe src='https://cesium.com/ion/stories/viewer/?id=5fdeb51a-4be7-4231-9f4f-e0c9d77aed12' width='1100' height='700'></iframe>", #width='500' height='400'
         unsafe_allow_html=True
     )
     col2.image(new_image)
