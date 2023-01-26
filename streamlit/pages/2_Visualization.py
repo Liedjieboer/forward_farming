@@ -18,7 +18,7 @@ elif option == 'Temperature':
     # col1, col2, col3 = st.columns(3)
     # with col1:
 
-    col1, col2 = st.columns(10)
+    col1, col2 = st.columns([10, 1])
     col1.write(
         f"<iframe src='https://cesium.com/ion/stories/viewer/?id=5fdeb51a-4be7-4231-9f4f-e0c9d77aed12' width='600' height='400'></iframe>", #width='500' height='400'
         unsafe_allow_html=True,
