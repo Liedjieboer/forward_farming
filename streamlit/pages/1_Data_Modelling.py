@@ -4,7 +4,8 @@ import base64
 st.set_page_config(
     page_title="Modelling",
     page_icon=":bar_chart:",
-    initial_sidebar_state="collapsed"
+    initial_sidebar_state="collapsed",
+    layout="wide"
 )
 
 st.markdown(
