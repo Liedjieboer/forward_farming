@@ -2,7 +2,7 @@ import streamlit as st
 from PIL import Image
 
 image = Image.open('streamlit/images/colorbar.png')
-new_image = image.resize((50,400))
+new_image = image.resize((100,400))
 
 option = st.selectbox(
     'Would you like to see the sites or the change in temperature?',
