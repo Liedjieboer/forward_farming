@@ -2,7 +2,7 @@ import streamlit as st
 from PIL import Image
 
 image = Image.open('streamlit/images/colorbar.png')
-new_image = image.resize((100,400))
+new_image = image.resize((50,400))
 
 option = st.selectbox(
     'Would you like to see the sites or the change in temperature?',
@@ -23,4 +23,4 @@ elif option == 'Temperature':
         f"<iframe src='https://cesium.com/ion/stories/viewer/?id=5fdeb51a-4be7-4231-9f4f-e0c9d77aed12' width='600' height='400'></iframe>", #width='500' height='400'
         unsafe_allow_html=True,
     )
-    col2.image(new_image)
+    col2.image(image)
