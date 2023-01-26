@@ -4,7 +4,7 @@ import base64
 st.set_page_config(
     page_title="Forward Farming",
     page_icon=":tractor:",
-    layout="centered",
+    layout="wide",
     initial_sidebar_state="collapsed"
 )
 
@@ -37,4 +37,3 @@ text-align: center;
 color: black;
 '>The effect of climate change on viticulture in Sheffield, UK</h1>"""
 , unsafe_allow_html=True)
-
