@@ -4,7 +4,7 @@ import base64
 st.set_page_config(
     page_title="Forward Farming",
     page_icon=":tractor:",
-    layout="wide",
+    layout="centered",
     initial_sidebar_state="collapsed"
 )
 
