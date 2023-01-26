@@ -10,7 +10,7 @@ option = st.selectbox(
 
 if option == 'Sites':
     st.write(
-        f"<iframe src='https://cesium.com/ion/stories/viewer/?id=94b064a0-668f-495d-bf86-bdca2364f818' width='1600' height='800'></iframe>",
+        f"<iframe src='https://cesium.com/ion/stories/viewer/?id=94b064a0-668f-495d-bf86-bdca2364f818' width='1500' height='800'></iframe>",
         unsafe_allow_html=True
     )
 
